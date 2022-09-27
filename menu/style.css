@@ -1,0 +1,81 @@
+body {
+  background-color: whitesmoke;
+  background-image: url("https://www.transparenttextures.com/patterns/food.png");
+  width: 100%;
+  margin: 0;
+}
+
+h1 {
+  -webkit-text-decoration: burlywood underline 3px;
+          text-decoration: burlywood underline 3px;
+  text-underline-offset: 10px;
+  text-align: center;
+}
+
+section {
+  text-align: center;
+}
+section article {
+  max-width: 500px;
+  width: 350px;
+  border: solid 1px black;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 15px auto;
+}
+section article h4 {
+  margin: 5px auto;
+}
+section article img {
+  width: 200px;
+  height: auto;
+  border: solid 3px burlywood;
+  border-radius: 5px;
+}
+
+header {
+  border-bottom: 0.5px solid rgba(33, 32, 32, 0.5);
+}
+
+strong {
+  color: burlywood;
+}
+
+.menu_text {
+  margin: 7px auto;
+}
+
+.btn {
+  margin-left: 5px;
+  background: white;
+  border-radius: 5px;
+  border-color: burlywood;
+  color: burlywood;
+}
+
+.menu_btn {
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 580px) {
+  .menu-center {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+  }
+  section article {
+    display: flex;
+    justify-content: space-between;
+    border: none;
+  }
+  .menu_info {
+    margin-left: 5px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .menu-center {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+  }
+}/*# sourceMappingURL=style.css.map */

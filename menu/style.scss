@@ -1,0 +1,87 @@
+$color1: burlywood;
+
+body {
+  background-color: whitesmoke;
+  background-image: url("https://www.transparenttextures.com/patterns/food.png");
+  width: 100%;
+  margin: 0;
+}
+
+h1 {
+  text-decoration: $color1 underline 3px;
+  text-underline-offset: 10px;
+  text-align: center;
+}
+
+section {
+  text-align: center;
+
+  article {
+    max-width: 500px;
+    width: 350px;
+    border: solid 1px black;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 15px auto;
+
+    h4 {
+      margin: 5px auto;
+    }
+    img {
+      width: 200px;
+      height: auto;
+      border: solid 3px $color1;
+      border-radius: 5px;
+    }
+  }
+}
+header {
+  border-bottom: 0.5px solid rgb(33, 32, 32, 50%);
+}
+strong {
+  color: $color1;
+}
+
+.menu_text {
+  margin: 7px auto;
+}
+
+.btn {
+  margin-left: 5px;
+  background: white;
+  border-radius: 5px;
+  border-color: $color1;
+  color: $color1;
+}
+
+.menu_btn {
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 580px) {
+  .menu-center {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+  }
+
+  section {
+    article {
+      display: flex;
+      justify-content: space-between;
+      border: none;
+    }
+  }
+
+  .menu_info {
+    margin-left: 5px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .menu-center {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+  }
+}

@@ -1,0 +1,23 @@
+li{
+    margin-left: 20px;
+}
+
+.container{
+    position: relative;
+    top: 10vh;
+    background-color: white;
+    display: block;
+    border-radius: 10px;
+    height: 9em;
+    padding-top: 25px;
+}
+
+.title{
+    width: 530px;
+    margin:auto;  
+}
+
+.btn{
+    margin: 20px 45%;
+    width: 90px;
+}
