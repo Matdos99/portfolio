@@ -1,0 +1,145 @@
+//https://www.focusjunior.it/content/uploads/2018/12/deserto-kalahari-1280x720.jpg
+
+body {
+  margin: 0;
+}
+
+#home {
+  background-image: url(https://www.focusjunior.it/content/uploads/2018/12/deserto-kalahari-1280x720.jpg);
+  background-size: cover;
+  height: 600px;
+}
+
+nav {
+  background-color: white;
+  width: 100%;
+}
+
+.logo {
+  width: 70px;
+}
+
+li {
+  list-style-type: none;
+  text-align: center;
+  padding: 5px;
+
+  .scroll-link {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+.container {
+  height: 30em;
+  text-align: center;
+  padding: auto 40px;
+  padding-top: 150px;
+  padding-bottom: 10px;
+  .button-tour {
+    background: none;
+    border: solid white 2px;
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+}
+.container > * {
+  color: white;
+}
+
+.section {
+  padding-top: 20px;
+  height: 30rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+.section h1{
+  font-size: 32px;
+}
+
+.section span{
+  color: rgb(108, 7, 7);
+}
+
+.section:nth-child(odd){
+  background-color: rgb(250, 233, 224);
+}
+
+.footer-section {
+  height: 10rem;
+  background-color: rgb(55, 19, 19);
+  text-align: center;
+  padding: 45px 70px;
+
+  p{
+    color: white;
+  }
+}
+
+.top-link{
+ right: 2em;
+ width: 40px;
+ height: 40px;
+ border-radius: 5px;
+ padding: 5px;
+  //border: solid 1px rgb(55, 19, 19);
+  color: rgb(59,19,19);
+  transform: scale(1);
+  box-shadow: 0 0 0 0 rgba(0,0,0,1);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse{
+  0%{transform: scale(0.97);
+  box-shadow: 0 0 0 0 rgba(0,0,0,0.7) ;}
+
+  70%{transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(0,0,0,0) ;}
+
+  100%{transform: scale(0.97);
+    box-shadow: 0 0 0 0 rgba(0,0,0,0) ;}
+}
+
+@media screen and (min-width: 768px) {
+  nav {
+    background: none;
+    //display: flex;
+  }
+
+  li {
+    .scroll-link {
+    color: white;
+    padding-left: 4vw;
+    padding-right: 6vw;
+  }
+  }
+
+  
+
+  .scroll-nav .scroll-link {
+    color: black;
+  }
+
+  .scroll-nav {
+    background-color: white;
+    transition: .6s;
+  }
+}
+@media screen and (min-width: 1280px) {
+
+  #home{
+    height: 720px;
+  }
+  nav {
+    background: none;
+    //display: flex;
+  }
+
+  .scroll-link {
+    color: white;
+    padding-left: 7vw;
+    padding-right: 6vw;
+  }
+}
